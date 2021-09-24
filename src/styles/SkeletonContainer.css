@@ -1,0 +1,53 @@
+.skeletonContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-block: 1rem;
+}
+@media (max-width: 599.9px) {
+  .skeletonContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media (min-width: 600px) and (max-width: 925px) {
+  .skeletonContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 925.01px) {
+  .skeletonContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media (max-width: 599.9px) {
+  .skeletonContainer .skeletonWrapper {
+    width: 42.5vw;
+  }
+}
+@media (min-width: 600px) and (max-width: 925px) {
+  .skeletonContainer .skeletonWrapper {
+    width: 31.5vw;
+  }
+}
+@media (min-width: 925.01px) {
+  .skeletonContainer .skeletonWrapper {
+    width: 23.5vw;
+  }
+}
+.skeletonContainer .react-reveal {
+  -webkit-animation-duration: 1.5s !important;
+          animation-duration: 1.5s !important;
+}

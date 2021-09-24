@@ -1,0 +1,36 @@
+.DataItem{
+        box-shadow: #00000069 0px 3px 8px;
+        border-radius: 0.5rem;
+        padding: 0.8rem 1.2rem;
+        transition: all 0.5s linear 0s;
+        &:hover{ box-shadow: #0d995369 0px 3px 8px; }
+
+        @media (max-width: 599.9px){ width: 42.5vw; margin-bottom: 1rem; }
+        @media (min-width: 600px) and (max-width: 925px){ width: 31.5vw; margin-bottom: 1rem; }
+        @media (min-width: 925.01px){ width: 23.5vw; }
+    .DataItem__bio{
+        display: flex; 
+        align-items: center;
+        img{ width: 3.5rem; height: 3.5rem; border-radius: 50%;  margin-right: 0.4rem; }
+        div{
+            span{
+                display: block;
+                &:first-of-type{ font-weight: 600; }
+                &:last-of-type{ font-weight: 400; font-size: 0.85rem;}
+            }
+        }
+    }
+    p{ padding-inline: 0.3rem; }
+    a{
+        border-radius: 0.25rem;
+        padding: 0.4rem 2.0rem;
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.5s linear 0s;
+        &:hover{ background-color: #0d9953; }
+    }
+}

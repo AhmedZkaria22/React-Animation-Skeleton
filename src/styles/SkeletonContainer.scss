@@ -1,0 +1,18 @@
+.skeletonContainer{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+    flex-wrap: wrap;
+    margin-block: 1rem;
+
+    @media (max-width: 599.9px){ justify-content: space-evenly; }
+    @media (min-width: 600px) and (max-width: 925px){ justify-content: center; }
+    @media (min-width: 925.01px){ justify-content: space-evenly; }
+    .skeletonWrapper{
+        @media (max-width: 599.9px){ width: 42.5vw; }
+        @media (min-width: 600px) and (max-width: 925px){ width: 31.5vw; }
+        @media (min-width: 925.01px){ width: 23.5vw; }
+    }
+    .react-reveal{ animation-duration: 1.5s!important; }
+}

@@ -1,0 +1,44 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    padding: 1.2rem;
+
+    .skeletonWrapper__title, .skeletonWrapper__img, .skeletonWrapper__text
+    , .skeletonWrapper__button, .skeletonWrapper__button{
+        &::before{
+            animation: anmy1 4.0s infinite!important;
+            width: 25%!important;
+        } 
+    }
+
+
+    .hero__desc{
+        grid-column: 1 / 3;
+        p{ padding-right: 2rem; }
+        button{
+            border-radius: 0.3rem;
+            padding: 0.5rem 0.8rem;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+    }
+    .hero__imgs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        @media (max-width: 860px){ flex-direction: column!important; 
+            img, .skeletonWrapper__img{ margin-bottom: 0.35rem!important; }
+        }
+
+        img{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.5rem;
+            display: block;
+            margin-right: 0.35rem;
+            margin-bottom: 0rem;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.appNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 0.5rem 20%;
+}
+.appNav .appNav__item {
+  color: #0d9953;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+.appNav .appNav__item:hover {
+  color: #585858;
+}
+.appNav .skeletonWrapper__text {
+  width: 15% !important;
+}

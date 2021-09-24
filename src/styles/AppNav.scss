@@ -1,0 +1,17 @@
+.appNav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0.5rem 20%;
+    .appNav__item{        
+        color: #0d9953;
+        cursor: pointer;
+        font-weight: 600;        
+        font-size: 1.25rem;
+        transition: all 0.5s linear 0s;
+        &:hover{ color: #585858; }
+    }
+    .skeletonWrapper__text{
+        width: 15%!important;
+    }
+}

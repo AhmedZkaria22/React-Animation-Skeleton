@@ -1,0 +1,28 @@
+.ReactRevelaMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-block: 0.3rem;
+  padding: 1.5rem 0.3rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.ReactRevelaMenu .ReactRevelaMenu__item {
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  margin: 0.25rem 1.5rem;
+}
+.ReactRevelaMenu .ReactRevelaMenu__item:hover {
+  color: #0d9953;
+}

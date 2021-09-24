@@ -1,0 +1,125 @@
+.appMain.Skeleton .ReactRevelaMenu {
+  display: none;
+}
+.appMain.Both .ReactRevelaMenu, .appMain.ReactReveal .ReactRevelaMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes anmy1 {
+  0% {
+    left: -100%;
+  }
+  35% {
+    left: -1rem;
+  }
+  75% {
+    left: 110%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+
+@keyframes anmy1 {
+  0% {
+    left: -100%;
+  }
+  35% {
+    left: -1rem;
+  }
+  75% {
+    left: 110%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+.skeletonWrapper {
+  padding: 1.2rem;
+}
+.skeletonWrapper.azDFlexCC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skeletonWrapper.azDFlexCSevn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skeletonWrapper .skeletonWrapper__title, .skeletonWrapper .skeletonWrapper__img, .skeletonWrapper .skeletonWrapper__text,
+.skeletonWrapper .skeletonWrapper__button, .skeletonWrapper .skeletonWrapper__buttonSm, .skeletonWrapper .skeletonWrapper__button, .skeletonWrapper .skeletonWrapper__menu {
+  background-color: #333;
+  color: transparent;
+  margin: 0;
+  border-radius: 0.15rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.skeletonWrapper .skeletonWrapper__title::before, .skeletonWrapper .skeletonWrapper__img::before, .skeletonWrapper .skeletonWrapper__text::before, .skeletonWrapper .skeletonWrapper__button::before,
+.skeletonWrapper .skeletonWrapper__buttonSm::before, .skeletonWrapper .skeletonWrapper__button::before, .skeletonWrapper .skeletonWrapper__menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1.5rem;
+  height: 100%;
+  background-color: #6e6e6e33;
+  -webkit-animation: anmy1 1.8s infinite;
+          animation: anmy1 1.8s infinite;
+  border-radius: 0.15rem;
+}
+.skeletonWrapper .skeletonWrapper__img::before {
+  width: 100%;
+}
+.skeletonWrapper .skeletonWrapper__buttonSm::before {
+  width: 40%;
+}
+.skeletonWrapper .skeletonWrapper__title {
+  width: 65%;
+  height: 2.4rem;
+  margin-bottom: 0.35rem;
+}
+.skeletonWrapper .skeletonWrapper__text {
+  width: 90%;
+  height: 1rem;
+  margin-bottom: 0.25rem;
+}
+.skeletonWrapper .skeletonWrapper__button {
+  width: 7rem;
+  height: 1.6rem;
+  border: none;
+  margin-block: 0.35rem;
+}
+.skeletonWrapper .skeletonWrapper__buttonSm {
+  width: 5rem;
+  height: 1.6rem;
+  border: none;
+  margin-block: 0.35rem;
+}
+.skeletonWrapper .skeletonWrapper__img {
+  display: block;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  width: 3rem;
+  height: 3rem;
+}
+.skeletonWrapper .skeletonWrapper__menu {
+  width: calc(100% / 10);
+  height: 1.5rem;
+  margin: 0.25rem 0.5rem;
+}
